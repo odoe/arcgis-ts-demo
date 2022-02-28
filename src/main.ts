@@ -2,7 +2,7 @@ import './style.css'
 
 import App from './app';
 
-const apiKey = 'AAPK6f433fecf80d4d17b1510d043ea28f65h4D1jbtaAiyCqRy2w7NQOF8NAbQ0k4wQNHAM3nx4OMr3QHIzN8WLMEqCFLPUfYkc';
+const apiKey = import.meta.env.VITE_API_KEY as string;
 
 const app = new App({ apiKey });
 
